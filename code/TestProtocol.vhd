@@ -1,0 +1,32 @@
+--LIBRARY IEEE;
+--USE IEEE.std_logic_1164.ALL;
+--USE IEEE.numeric_std.ALL;
+--
+--USE WORK.BasicPackage.ALL;
+--USE WORK.VGAPackage.ALL;
+--
+--ENTITY TestProtocol IS
+--
+--END TestProtocol;
+--
+--ARCHITECTURE TestProtocolArch OF TestProtocol IS
+--
+--    SIGNAL Rst      : uint01  := '0';
+--    SIGNAL clk      : uint01  := '0';
+--    SIGNAL RGB      : ColorT  ;
+--    SIGNAL VGA_ctrl : vgaCtrlT; 
+--
+--BEGIN
+--
+--    Sync_Counter : ENTITY WORK.ControladorVGA
+--    PORT MAP   (reset => Rst        ,
+--                clk => Clk          ,
+--                RGB => RGB,
+--                VGA_ctrl => VGA_ctrl       
+--               );
+--
+--    clk <= NOT clk AFTER 10  ns;
+--    Rst <= '1'     AFTER 10  ns;
+--
+--
+--END TestProtocolArch;
